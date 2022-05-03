@@ -10,6 +10,7 @@ public class Shoot : MonoBehaviour
     public Image ammoType;
     private int ammoCount;
     private BulletType currentAmmoType;
+    private GameObject hit;
 
     public enum BulletType
     {
@@ -18,9 +19,13 @@ public class Shoot : MonoBehaviour
         Wall
     }
 
+    public Camera cam;
+
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         ammoCount = 10;
         ammoTxt = GameObject.FindGameObjectWithTag("Ammo Count").GetComponent<Text>();
         ammoType = GameObject.FindGameObjectWithTag("Ammo Type").GetComponent<Image>();
@@ -40,6 +45,19 @@ public class Shoot : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0) && ammoCount > -1)
         {
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hitInfo;
+            Physics.Raycast(ray, out hitInfo);
+            Debug.DrawRay(ray.origin, ray.direction);
+            if(hitInfo.transform != null)
+            {
+                hit = hitInfo.transform.gameObject;
+            }
+            
+            if(hit.tag == "Enemy")
+            {
+                Destroy(hit);
+            }
             ammoCount--;
         }
         if(Input.GetKeyDown(KeyCode.R))
@@ -56,6 +74,12 @@ public class Shoot : MonoBehaviour
         {
             currentAmmoType++;
             print(currentAmmoType);
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
 
         switch (currentAmmoType)

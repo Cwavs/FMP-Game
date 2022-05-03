@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ammo Count
   - Ammo Type
+  - Goal
+  - Enemy
   layers:
   - Default
   - TransparentFX
