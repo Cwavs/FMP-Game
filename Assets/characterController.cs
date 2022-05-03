@@ -18,6 +18,23 @@ public class characterController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            
+        }else if (Input.GetMouseButtonDown(1))
+        {
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 }

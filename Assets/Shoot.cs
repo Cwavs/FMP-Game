@@ -76,12 +76,6 @@ public class Shoot : MonoBehaviour
             print(currentAmmoType);
         }
 
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
-
         switch (currentAmmoType)
         {
             default:
