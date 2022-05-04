@@ -30,26 +30,27 @@ public class Ai : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("T");
         if(other.tag == "Goal")
         {
-            print("T2");
-            rand = Random.Range(0, goals.Length - 1);
-            if(rand == oldGoal)
-            {
-                if(rand == 0)
-                {
-                    rand++;
-                }
-                else
-                {
-                    rand--;
-                }
-            }else
-            {
-                agent.SetDestination(goals[rand].position);
-                oldGoal = rand;
-            }
+            rand = randomGoal();
+            agent.SetDestination(goals[rand].position);
+            oldGoal = rand;
+
         }
+    }
+
+    public void OnHit()
+    {
+        Destroy(gameObject);
+    }
+
+    public int randomGoal()
+    {
+        rand = Random.Range(0, goals.Length - 1);
+        if(rand == oldGoal)
+        {
+            rand = randomGoal();
+        }
+        return rand;
     }
 }

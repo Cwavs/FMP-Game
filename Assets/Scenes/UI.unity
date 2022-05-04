@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.0040272945, g: 0.0002198911, b: 0.00000005371407, a: 1}
+  m_IndirectSpecularColor: {r: 0.004027288, g: 0.00021989067, b: 0.00000005371407, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -200,10 +200,10 @@ GameObject:
   - component: {fileID: 99465804}
   - component: {fileID: 99465803}
   - component: {fileID: 99465802}
-  - component: {fileID: 99465801}
   - component: {fileID: 99465800}
   - component: {fileID: 99465799}
   - component: {fileID: 99465798}
+  - component: {fileID: 99465801}
   m_Layer: 0
   m_Name: Cylinder (30)
   m_TagString: Enemy
@@ -219,7 +219,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99465797}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -268,20 +268,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &99465801
-CapsuleCollider:
+--- !u!64 &99465801
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99465797}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &99465802
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -356,10 +356,10 @@ GameObject:
   - component: {fileID: 180833213}
   - component: {fileID: 180833212}
   - component: {fileID: 180833211}
-  - component: {fileID: 180833210}
   - component: {fileID: 180833209}
   - component: {fileID: 180833208}
   - component: {fileID: 180833207}
+  - component: {fileID: 180833210}
   m_Layer: 0
   m_Name: Cylinder (5)
   m_TagString: Enemy
@@ -375,7 +375,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180833206}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -424,20 +424,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &180833210
-CapsuleCollider:
+--- !u!64 &180833210
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180833206}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &180833211
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -512,10 +512,10 @@ GameObject:
   - component: {fileID: 192027971}
   - component: {fileID: 192027970}
   - component: {fileID: 192027969}
-  - component: {fileID: 192027968}
   - component: {fileID: 192027967}
   - component: {fileID: 192027966}
   - component: {fileID: 192027965}
+  - component: {fileID: 192027968}
   m_Layer: 0
   m_Name: Cylinder (10)
   m_TagString: Enemy
@@ -531,7 +531,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192027964}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -580,20 +580,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &192027968
-CapsuleCollider:
+--- !u!64 &192027968
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192027964}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &192027969
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -668,10 +668,10 @@ GameObject:
   - component: {fileID: 201566670}
   - component: {fileID: 201566669}
   - component: {fileID: 201566668}
-  - component: {fileID: 201566667}
   - component: {fileID: 201566666}
   - component: {fileID: 201566665}
   - component: {fileID: 201566664}
+  - component: {fileID: 201566667}
   m_Layer: 0
   m_Name: Cylinder (29)
   m_TagString: Enemy
@@ -687,7 +687,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201566663}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -736,20 +736,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &201566667
-CapsuleCollider:
+--- !u!64 &201566667
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201566663}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &201566668
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -826,7 +826,6 @@ GameObject:
   - component: {fileID: 203168364}
   - component: {fileID: 203168363}
   - component: {fileID: 203168362}
-  - component: {fileID: 203168367}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -1127,22 +1126,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!208 &203168367
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203168361}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 5, y: 1.2270001, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 5, y: 1.2270001, z: -0.5}
-  m_TimeToStationary: 0.5
 --- !u!1 &226994174
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,10 +1137,10 @@ GameObject:
   - component: {fileID: 226994181}
   - component: {fileID: 226994180}
   - component: {fileID: 226994179}
-  - component: {fileID: 226994178}
   - component: {fileID: 226994177}
   - component: {fileID: 226994176}
   - component: {fileID: 226994175}
+  - component: {fileID: 226994178}
   m_Layer: 0
   m_Name: Cylinder (6)
   m_TagString: Enemy
@@ -1173,7 +1156,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226994174}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -1222,20 +1205,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &226994178
-CapsuleCollider:
+--- !u!64 &226994178
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226994174}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &226994179
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1310,10 +1293,10 @@ GameObject:
   - component: {fileID: 238590184}
   - component: {fileID: 238590183}
   - component: {fileID: 238590182}
-  - component: {fileID: 238590181}
   - component: {fileID: 238590180}
   - component: {fileID: 238590179}
   - component: {fileID: 238590178}
+  - component: {fileID: 238590181}
   m_Layer: 0
   m_Name: Cylinder (36)
   m_TagString: Enemy
@@ -1329,7 +1312,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238590177}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -1378,20 +1361,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &238590181
-CapsuleCollider:
+--- !u!64 &238590181
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238590177}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &238590182
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1466,10 +1449,10 @@ GameObject:
   - component: {fileID: 320838714}
   - component: {fileID: 320838713}
   - component: {fileID: 320838712}
-  - component: {fileID: 320838711}
   - component: {fileID: 320838710}
   - component: {fileID: 320838709}
   - component: {fileID: 320838708}
+  - component: {fileID: 320838711}
   m_Layer: 0
   m_Name: Cylinder (15)
   m_TagString: Enemy
@@ -1485,7 +1468,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320838707}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -1534,20 +1517,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &320838711
-CapsuleCollider:
+--- !u!64 &320838711
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320838707}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &320838712
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1622,10 +1605,10 @@ GameObject:
   - component: {fileID: 360313162}
   - component: {fileID: 360313161}
   - component: {fileID: 360313160}
-  - component: {fileID: 360313159}
   - component: {fileID: 360313158}
   - component: {fileID: 360313157}
   - component: {fileID: 360313163}
+  - component: {fileID: 360313159}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Enemy
@@ -1674,20 +1657,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &360313159
-CapsuleCollider:
+--- !u!64 &360313159
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360313156}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &360313160
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1759,7 +1742,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360313156}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -1778,10 +1761,10 @@ GameObject:
   - component: {fileID: 367449433}
   - component: {fileID: 367449432}
   - component: {fileID: 367449431}
-  - component: {fileID: 367449430}
   - component: {fileID: 367449429}
   - component: {fileID: 367449428}
   - component: {fileID: 367449427}
+  - component: {fileID: 367449430}
   m_Layer: 0
   m_Name: Cylinder (7)
   m_TagString: Enemy
@@ -1797,7 +1780,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367449426}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -1846,20 +1829,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &367449430
-CapsuleCollider:
+--- !u!64 &367449430
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367449426}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &367449431
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1934,10 +1917,10 @@ GameObject:
   - component: {fileID: 392387493}
   - component: {fileID: 392387492}
   - component: {fileID: 392387491}
-  - component: {fileID: 392387490}
   - component: {fileID: 392387489}
   - component: {fileID: 392387488}
   - component: {fileID: 392387487}
+  - component: {fileID: 392387490}
   m_Layer: 0
   m_Name: Cylinder (34)
   m_TagString: Enemy
@@ -1953,7 +1936,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 392387486}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -2002,20 +1985,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &392387490
-CapsuleCollider:
+--- !u!64 &392387490
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 392387486}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &392387491
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2130,7 +2113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2165,10 +2148,10 @@ GameObject:
   - component: {fileID: 408141903}
   - component: {fileID: 408141902}
   - component: {fileID: 408141901}
-  - component: {fileID: 408141900}
   - component: {fileID: 408141899}
   - component: {fileID: 408141898}
   - component: {fileID: 408141897}
+  - component: {fileID: 408141900}
   m_Layer: 0
   m_Name: Cylinder (31)
   m_TagString: Enemy
@@ -2184,7 +2167,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408141896}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -2233,20 +2216,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &408141900
-CapsuleCollider:
+--- !u!64 &408141900
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408141896}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &408141901
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2321,10 +2304,10 @@ GameObject:
   - component: {fileID: 446216886}
   - component: {fileID: 446216885}
   - component: {fileID: 446216884}
-  - component: {fileID: 446216883}
   - component: {fileID: 446216882}
   - component: {fileID: 446216881}
   - component: {fileID: 446216880}
+  - component: {fileID: 446216883}
   m_Layer: 0
   m_Name: Cylinder (37)
   m_TagString: Enemy
@@ -2340,7 +2323,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446216879}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -2389,20 +2372,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &446216883
-CapsuleCollider:
+--- !u!64 &446216883
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446216879}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &446216884
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2629,7 +2612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2664,10 +2647,10 @@ GameObject:
   - component: {fileID: 504086684}
   - component: {fileID: 504086683}
   - component: {fileID: 504086682}
-  - component: {fileID: 504086681}
   - component: {fileID: 504086680}
   - component: {fileID: 504086679}
   - component: {fileID: 504086678}
+  - component: {fileID: 504086681}
   m_Layer: 0
   m_Name: Cylinder (22)
   m_TagString: Enemy
@@ -2683,7 +2666,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504086677}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -2732,20 +2715,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &504086681
-CapsuleCollider:
+--- !u!64 &504086681
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504086677}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &504086682
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2820,7 +2803,6 @@ GameObject:
   - component: {fileID: 516207654}
   - component: {fileID: 516207656}
   - component: {fileID: 516207655}
-  - component: {fileID: 516207657}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -2858,7 +2840,7 @@ MonoBehaviour:
   m_VerticalAxis:
     Value: 0
     m_SpeedMode: 1
-    m_MaxSpeed: 10
+    m_MaxSpeed: 5
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
@@ -2882,7 +2864,7 @@ MonoBehaviour:
   m_HorizontalAxis:
     Value: 0
     m_SpeedMode: 1
-    m_MaxSpeed: 10
+    m_MaxSpeed: 5
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
@@ -2916,23 +2898,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &516207657
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516207653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_NoiseProfile: {fileID: 11400000, guid: 46965f9cbaf525742a6da4c2172a99cd, type: 2}
-  m_PivotOffset: {x: 0, y: 0, z: 0}
-  m_AmplitudeGain: 1
-  m_FrequencyGain: 1
-  mNoiseOffsets: {x: -519.8202, y: 316.82062, z: -118.823395}
 --- !u!850595691 &527044879
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -3061,7 +3026,7 @@ Transform:
   - {fileID: 2104241384}
   - {fileID: 360313162}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &648519708
 GameObject:
@@ -3186,10 +3151,10 @@ GameObject:
   - component: {fileID: 691528628}
   - component: {fileID: 691528627}
   - component: {fileID: 691528626}
-  - component: {fileID: 691528625}
   - component: {fileID: 691528624}
   - component: {fileID: 691528623}
   - component: {fileID: 691528622}
+  - component: {fileID: 691528625}
   m_Layer: 0
   m_Name: Cylinder (3)
   m_TagString: Enemy
@@ -3205,7 +3170,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691528621}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -3254,20 +3219,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &691528625
-CapsuleCollider:
+--- !u!64 &691528625
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691528621}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &691528626
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3337,7 +3302,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27850
+  m_Name: pb_Mesh17438
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3640,14 +3605,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammoTxt: {fileID: 0}
   ammoType: {fileID: 0}
-  cam: {fileID: 963194227}
 --- !u!43 &726332054
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27284
+  m_Name: pb_Mesh17304
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3816,10 +3780,10 @@ GameObject:
   - component: {fileID: 737310520}
   - component: {fileID: 737310519}
   - component: {fileID: 737310518}
-  - component: {fileID: 737310517}
   - component: {fileID: 737310516}
   - component: {fileID: 737310515}
   - component: {fileID: 737310514}
+  - component: {fileID: 737310517}
   m_Layer: 0
   m_Name: Cylinder (35)
   m_TagString: Enemy
@@ -3835,7 +3799,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737310513}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -3884,20 +3848,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &737310517
-CapsuleCollider:
+--- !u!64 &737310517
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737310513}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &737310518
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3961,6 +3925,50 @@ Transform:
   m_Father: {fileID: 636865952}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &770415106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 770415108}
+  - component: {fileID: 770415107}
+  m_Layer: 0
+  m_Name: Game Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &770415107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770415106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b728c24bdbec77048863d7a49c55733c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceController: {fileID: 707798473}
+--- !u!4 &770415108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770415106}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 46.598087, y: 0.9929318, z: -55.033627}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &791336319
 GameObject:
   m_ObjectHideFlags: 0
@@ -3972,10 +3980,10 @@ GameObject:
   - component: {fileID: 791336326}
   - component: {fileID: 791336325}
   - component: {fileID: 791336324}
-  - component: {fileID: 791336323}
   - component: {fileID: 791336322}
   - component: {fileID: 791336321}
   - component: {fileID: 791336320}
+  - component: {fileID: 791336323}
   m_Layer: 0
   m_Name: Cylinder (12)
   m_TagString: Enemy
@@ -3991,7 +3999,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791336319}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -4040,20 +4048,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &791336323
-CapsuleCollider:
+--- !u!64 &791336323
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791336319}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &791336324
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4208,7 +4216,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 19.649, y: 4.395, z: -6.313}
 --- !u!1 &889644008
 GameObject:
@@ -4221,10 +4229,10 @@ GameObject:
   - component: {fileID: 889644015}
   - component: {fileID: 889644014}
   - component: {fileID: 889644013}
-  - component: {fileID: 889644012}
   - component: {fileID: 889644011}
   - component: {fileID: 889644010}
   - component: {fileID: 889644009}
+  - component: {fileID: 889644012}
   m_Layer: 0
   m_Name: Cylinder (26)
   m_TagString: Enemy
@@ -4240,7 +4248,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889644008}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -4289,20 +4297,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &889644012
-CapsuleCollider:
+--- !u!64 &889644012
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889644008}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &889644013
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4417,7 +4425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4454,7 +4462,6 @@ GameObject:
   - component: {fileID: 956264440}
   - component: {fileID: 956264439}
   - component: {fileID: 956264438}
-  - component: {fileID: 956264443}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -4755,22 +4762,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!208 &956264443
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956264437}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 5, y: 2.056, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 5, y: 2.056, z: -0.5}
-  m_TimeToStationary: 0.5
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4783,6 +4774,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4882,13 +4874,26 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
+  m_CustomBlends: {fileID: 11400000, guid: 7a09c6ff9c5cc4043805b81af74a60bd, type: 2}
   m_CameraCutEvent:
     m_PersistentCalls:
       m_Calls: []
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4036125fd0be4941a0a983e227ee8f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammController: {fileID: 770415107}
 --- !u!1 &988207928
 GameObject:
   m_ObjectHideFlags: 0
@@ -5012,10 +5017,10 @@ GameObject:
   - component: {fileID: 1028092804}
   - component: {fileID: 1028092803}
   - component: {fileID: 1028092802}
-  - component: {fileID: 1028092801}
   - component: {fileID: 1028092800}
   - component: {fileID: 1028092799}
   - component: {fileID: 1028092798}
+  - component: {fileID: 1028092801}
   m_Layer: 0
   m_Name: Cylinder (32)
   m_TagString: Enemy
@@ -5031,7 +5036,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028092797}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -5080,20 +5085,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1028092801
-CapsuleCollider:
+--- !u!64 &1028092801
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028092797}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1028092802
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5168,10 +5173,10 @@ GameObject:
   - component: {fileID: 1096872309}
   - component: {fileID: 1096872308}
   - component: {fileID: 1096872307}
-  - component: {fileID: 1096872306}
   - component: {fileID: 1096872305}
   - component: {fileID: 1096872304}
   - component: {fileID: 1096872303}
+  - component: {fileID: 1096872306}
   m_Layer: 0
   m_Name: Cylinder (23)
   m_TagString: Enemy
@@ -5187,7 +5192,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096872302}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -5236,20 +5241,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1096872306
-CapsuleCollider:
+--- !u!64 &1096872306
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096872302}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1096872307
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5324,10 +5329,10 @@ GameObject:
   - component: {fileID: 1111410342}
   - component: {fileID: 1111410341}
   - component: {fileID: 1111410340}
-  - component: {fileID: 1111410339}
   - component: {fileID: 1111410338}
   - component: {fileID: 1111410337}
   - component: {fileID: 1111410336}
+  - component: {fileID: 1111410339}
   m_Layer: 0
   m_Name: Cylinder (25)
   m_TagString: Enemy
@@ -5343,7 +5348,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111410335}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -5392,20 +5397,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1111410339
-CapsuleCollider:
+--- !u!64 &1111410339
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111410335}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1111410340
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5479,10 +5484,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1156473328}
   - component: {fileID: 1156473327}
-  - component: {fileID: 1156473329}
   m_Layer: 0
-  m_Name: CM vcam1
-  m_TagString: Untagged
+  m_Name: Aim
+  m_TagString: Aim
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5537,25 +5541,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1156473329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156473326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4036125fd0be4941a0a983e227ee8f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!43 &1179272657
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26800
+  m_Name: pb_Mesh16644
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5763,8 +5755,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5801,7 +5793,6 @@ GameObject:
   - component: {fileID: 1233335224}
   - component: {fileID: 1233335223}
   - component: {fileID: 1233335222}
-  - component: {fileID: 1233335227}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -8182,29 +8173,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!208 &1233335227
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1233335221}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 0
-  m_Extents: {x: 1, y: 1.6350001, z: 1}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: -1, y: 1.6350001, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!43 &1256782320
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3090
+  m_Name: pb_Mesh17216
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8373,10 +8348,10 @@ GameObject:
   - component: {fileID: 1329006811}
   - component: {fileID: 1329006810}
   - component: {fileID: 1329006809}
-  - component: {fileID: 1329006808}
   - component: {fileID: 1329006807}
   - component: {fileID: 1329006806}
   - component: {fileID: 1329006805}
+  - component: {fileID: 1329006808}
   m_Layer: 0
   m_Name: Cylinder (11)
   m_TagString: Enemy
@@ -8392,7 +8367,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329006804}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -8441,20 +8416,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1329006808
-CapsuleCollider:
+--- !u!64 &1329006808
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329006804}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1329006809
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8529,10 +8504,10 @@ GameObject:
   - component: {fileID: 1356380291}
   - component: {fileID: 1356380290}
   - component: {fileID: 1356380289}
-  - component: {fileID: 1356380288}
   - component: {fileID: 1356380287}
   - component: {fileID: 1356380286}
   - component: {fileID: 1356380285}
+  - component: {fileID: 1356380288}
   m_Layer: 0
   m_Name: Cylinder (19)
   m_TagString: Enemy
@@ -8548,7 +8523,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356380284}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -8597,20 +8572,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1356380288
-CapsuleCollider:
+--- !u!64 &1356380288
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356380284}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1356380289
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8685,10 +8660,10 @@ GameObject:
   - component: {fileID: 1380563378}
   - component: {fileID: 1380563377}
   - component: {fileID: 1380563376}
-  - component: {fileID: 1380563375}
   - component: {fileID: 1380563374}
   - component: {fileID: 1380563373}
   - component: {fileID: 1380563372}
+  - component: {fileID: 1380563375}
   m_Layer: 0
   m_Name: Cylinder (14)
   m_TagString: Enemy
@@ -8704,7 +8679,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380563371}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -8753,20 +8728,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1380563375
-CapsuleCollider:
+--- !u!64 &1380563375
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380563371}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1380563376
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8880,8 +8855,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -8900,7 +8875,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ammo: 28'
+  m_Text: 'Ammo: 10'
 --- !u!222 &1383544572
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8920,10 +8895,10 @@ GameObject:
   - component: {fileID: 1391710544}
   - component: {fileID: 1391710543}
   - component: {fileID: 1391710542}
-  - component: {fileID: 1391710541}
   - component: {fileID: 1391710540}
   - component: {fileID: 1391710539}
   - component: {fileID: 1391710538}
+  - component: {fileID: 1391710541}
   m_Layer: 0
   m_Name: Cylinder (13)
   m_TagString: Enemy
@@ -8939,7 +8914,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391710537}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -8988,20 +8963,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1391710541
-CapsuleCollider:
+--- !u!64 &1391710541
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391710537}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1391710542
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9076,10 +9051,10 @@ GameObject:
   - component: {fileID: 1425348924}
   - component: {fileID: 1425348923}
   - component: {fileID: 1425348922}
-  - component: {fileID: 1425348921}
   - component: {fileID: 1425348920}
   - component: {fileID: 1425348919}
   - component: {fileID: 1425348918}
+  - component: {fileID: 1425348921}
   m_Layer: 0
   m_Name: Cylinder (8)
   m_TagString: Enemy
@@ -9095,7 +9070,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425348917}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -9144,20 +9119,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1425348921
-CapsuleCollider:
+--- !u!64 &1425348921
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425348917}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1425348922
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9339,7 +9314,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26384
+  m_Name: pb_Mesh17054
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9508,10 +9483,10 @@ GameObject:
   - component: {fileID: 1479614355}
   - component: {fileID: 1479614354}
   - component: {fileID: 1479614353}
-  - component: {fileID: 1479614352}
   - component: {fileID: 1479614351}
   - component: {fileID: 1479614350}
   - component: {fileID: 1479614349}
+  - component: {fileID: 1479614352}
   m_Layer: 0
   m_Name: Cylinder (28)
   m_TagString: Enemy
@@ -9527,7 +9502,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479614348}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -9576,20 +9551,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1479614352
-CapsuleCollider:
+--- !u!64 &1479614352
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479614348}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1479614353
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9776,10 +9751,10 @@ GameObject:
   - component: {fileID: 1537266716}
   - component: {fileID: 1537266715}
   - component: {fileID: 1537266714}
-  - component: {fileID: 1537266713}
   - component: {fileID: 1537266712}
   - component: {fileID: 1537266711}
   - component: {fileID: 1537266710}
+  - component: {fileID: 1537266713}
   m_Layer: 0
   m_Name: Cylinder (21)
   m_TagString: Enemy
@@ -9795,7 +9770,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537266709}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -9844,20 +9819,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1537266713
-CapsuleCollider:
+--- !u!64 &1537266713
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537266709}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1537266714
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11337,10 +11312,10 @@ GameObject:
   - component: {fileID: 1555382665}
   - component: {fileID: 1555382664}
   - component: {fileID: 1555382663}
-  - component: {fileID: 1555382662}
   - component: {fileID: 1555382661}
   - component: {fileID: 1555382660}
   - component: {fileID: 1555382659}
+  - component: {fileID: 1555382662}
   m_Layer: 0
   m_Name: Cylinder (33)
   m_TagString: Enemy
@@ -11356,7 +11331,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555382658}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -11405,20 +11380,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1555382662
-CapsuleCollider:
+--- !u!64 &1555382662
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555382658}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1555382663
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11482,6 +11457,73 @@ Transform:
   m_Father: {fileID: 636865952}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1559503850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1559503852}
+  - component: {fileID: 1559503851}
+  m_Layer: 0
+  m_Name: Sway
+  m_TagString: Sway
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1559503851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559503850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 40
+    OrthographicSize: 5
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    LensShift: {x: 0, y: 0}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 1580917189}
+--- !u!4 &1559503852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559503850}
+  m_LocalRotation: {x: 0.0000003166497, y: -0.00000077486044, z: 0.0000028815123, w: 1}
+  m_LocalPosition: {x: 42.1, y: 16.6, z: -115.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1580917189}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1571536254
 GameObject:
   m_ObjectHideFlags: 0
@@ -11493,10 +11535,10 @@ GameObject:
   - component: {fileID: 1571536261}
   - component: {fileID: 1571536260}
   - component: {fileID: 1571536259}
-  - component: {fileID: 1571536258}
   - component: {fileID: 1571536257}
   - component: {fileID: 1571536256}
   - component: {fileID: 1571536255}
+  - component: {fileID: 1571536258}
   m_Layer: 0
   m_Name: Cylinder (17)
   m_TagString: Enemy
@@ -11512,7 +11554,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571536254}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -11561,20 +11603,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1571536258
-CapsuleCollider:
+--- !u!64 &1571536258
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571536254}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1571536259
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11638,6 +11680,130 @@ Transform:
   m_Father: {fileID: 636865952}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1580917188
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1580917189}
+  - component: {fileID: 1580917192}
+  - component: {fileID: 1580917191}
+  - component: {fileID: 1580917190}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1580917189
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580917188}
+  m_LocalRotation: {x: -0.055339586, y: 0.32207203, z: -0.018865747, w: 0.9449081}
+  m_LocalPosition: {x: 12.421261, y: 5.184455, z: 88.25968}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1559503852}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1580917190
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580917188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 46965f9cbaf525742a6da4c2172a99cd, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 1
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: 171.63647, y: 583.924, z: 254.75998}
+--- !u!114 &1580917191
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580917188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c9beda531928fc40968802117a5d256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RecenterTarget: 0
+  m_VerticalAxis:
+    Value: 0
+    m_SpeedMode: 1
+    m_MaxSpeed: 5
+    m_AccelTime: 0.1
+    m_DecelTime: 0.1
+    m_InputAxisName: Mouse Y
+    m_InputAxisValue: 0
+    m_InvertInput: 1
+    m_MinValue: -70
+    m_MaxValue: 70
+    m_Wrap: 0
+    m_Recentering:
+      m_enabled: 0
+      m_WaitTime: 1
+      m_RecenteringTime: 2
+      m_LegacyHeadingDefinition: -1
+      m_LegacyVelocityFilterStrength: -1
+  m_VerticalRecentering:
+    m_enabled: 0
+    m_WaitTime: 1
+    m_RecenteringTime: 2
+    m_LegacyHeadingDefinition: -1
+    m_LegacyVelocityFilterStrength: -1
+  m_HorizontalAxis:
+    Value: 0
+    m_SpeedMode: 1
+    m_MaxSpeed: 5
+    m_AccelTime: 0.1
+    m_DecelTime: 0.1
+    m_InputAxisName: Mouse X
+    m_InputAxisValue: 0
+    m_InvertInput: 0
+    m_MinValue: -180
+    m_MaxValue: 180
+    m_Wrap: 1
+    m_Recentering:
+      m_enabled: 0
+      m_WaitTime: 1
+      m_RecenteringTime: 2
+      m_LegacyHeadingDefinition: -1
+      m_LegacyVelocityFilterStrength: -1
+  m_HorizontalRecentering:
+    m_enabled: 0
+    m_WaitTime: 1
+    m_RecenteringTime: 2
+    m_LegacyHeadingDefinition: -1
+    m_LegacyVelocityFilterStrength: -1
+  m_ApplyBeforeBody: 0
+--- !u!114 &1580917192
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580917188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1593250266
 GameObject:
   m_ObjectHideFlags: 0
@@ -11649,10 +11815,10 @@ GameObject:
   - component: {fileID: 1593250273}
   - component: {fileID: 1593250272}
   - component: {fileID: 1593250271}
-  - component: {fileID: 1593250270}
   - component: {fileID: 1593250269}
   - component: {fileID: 1593250268}
   - component: {fileID: 1593250267}
+  - component: {fileID: 1593250270}
   m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Enemy
@@ -11668,7 +11834,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593250266}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -11717,20 +11883,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1593250270
-CapsuleCollider:
+--- !u!64 &1593250270
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593250266}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1593250271
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11805,10 +11971,10 @@ GameObject:
   - component: {fileID: 1624939007}
   - component: {fileID: 1624939006}
   - component: {fileID: 1624939005}
-  - component: {fileID: 1624939004}
   - component: {fileID: 1624939003}
   - component: {fileID: 1624939002}
   - component: {fileID: 1624939001}
+  - component: {fileID: 1624939004}
   m_Layer: 0
   m_Name: Cylinder (27)
   m_TagString: Enemy
@@ -11824,7 +11990,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624939000}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -11873,20 +12039,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1624939004
-CapsuleCollider:
+--- !u!64 &1624939004
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624939000}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1624939005
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12060,7 +12226,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27550
+  m_Name: pb_Mesh16952
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12231,7 +12397,6 @@ GameObject:
   - component: {fileID: 1658145231}
   - component: {fileID: 1658145230}
   - component: {fileID: 1658145229}
-  - component: {fileID: 1658145234}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -12532,22 +12697,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!208 &1658145234
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658145228}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 5, y: 1.401, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 5, y: 1.401, z: -0.5}
-  m_TimeToStationary: 0.5
 --- !u!1 &1671238798
 GameObject:
   m_ObjectHideFlags: 0
@@ -12671,10 +12820,10 @@ GameObject:
   - component: {fileID: 1755402221}
   - component: {fileID: 1755402220}
   - component: {fileID: 1755402219}
-  - component: {fileID: 1755402218}
   - component: {fileID: 1755402217}
   - component: {fileID: 1755402216}
   - component: {fileID: 1755402215}
+  - component: {fileID: 1755402218}
   m_Layer: 0
   m_Name: Cylinder (9)
   m_TagString: Enemy
@@ -12690,7 +12839,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755402214}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -12739,20 +12888,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1755402218
-CapsuleCollider:
+--- !u!64 &1755402218
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755402214}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1755402219
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12827,10 +12976,10 @@ GameObject:
   - component: {fileID: 1798193146}
   - component: {fileID: 1798193145}
   - component: {fileID: 1798193144}
-  - component: {fileID: 1798193143}
   - component: {fileID: 1798193142}
   - component: {fileID: 1798193141}
   - component: {fileID: 1798193140}
+  - component: {fileID: 1798193143}
   m_Layer: 0
   m_Name: Cylinder (18)
   m_TagString: Enemy
@@ -12846,7 +12995,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798193139}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -12895,20 +13044,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1798193143
-CapsuleCollider:
+--- !u!64 &1798193143
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798193139}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1798193144
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12985,7 +13134,6 @@ GameObject:
   - component: {fileID: 1804611167}
   - component: {fileID: 1804611166}
   - component: {fileID: 1804611165}
-  - component: {fileID: 1804611170}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -13286,22 +13434,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!208 &1804611170
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1804611164}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 5, y: 2.604, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 5, y: 2.604, z: -0.5}
-  m_TimeToStationary: 0.5
 --- !u!1 &1822210153
 GameObject:
   m_ObjectHideFlags: 0
@@ -13313,10 +13445,10 @@ GameObject:
   - component: {fileID: 1822210160}
   - component: {fileID: 1822210159}
   - component: {fileID: 1822210158}
-  - component: {fileID: 1822210157}
   - component: {fileID: 1822210156}
   - component: {fileID: 1822210155}
   - component: {fileID: 1822210154}
+  - component: {fileID: 1822210157}
   m_Layer: 0
   m_Name: Cylinder (38)
   m_TagString: Enemy
@@ -13332,7 +13464,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822210153}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -13381,20 +13513,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1822210157
-CapsuleCollider:
+--- !u!64 &1822210157
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822210153}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1822210158
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13509,7 +13641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -13567,7 +13699,7 @@ Transform:
   - {fileID: 1426337202}
   - {fileID: 1671238802}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1919089772
 GameObject:
@@ -13580,10 +13712,10 @@ GameObject:
   - component: {fileID: 1919089779}
   - component: {fileID: 1919089778}
   - component: {fileID: 1919089777}
-  - component: {fileID: 1919089776}
   - component: {fileID: 1919089775}
   - component: {fileID: 1919089774}
   - component: {fileID: 1919089773}
+  - component: {fileID: 1919089776}
   m_Layer: 0
   m_Name: Cylinder (4)
   m_TagString: Enemy
@@ -13599,7 +13731,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919089772}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -13648,20 +13780,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1919089776
-CapsuleCollider:
+--- !u!64 &1919089776
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919089772}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1919089777
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13736,10 +13868,10 @@ GameObject:
   - component: {fileID: 1948714413}
   - component: {fileID: 1948714412}
   - component: {fileID: 1948714411}
-  - component: {fileID: 1948714410}
   - component: {fileID: 1948714409}
   - component: {fileID: 1948714408}
   - component: {fileID: 1948714407}
+  - component: {fileID: 1948714410}
   m_Layer: 0
   m_Name: Cylinder (16)
   m_TagString: Enemy
@@ -13755,7 +13887,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948714406}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -13804,20 +13936,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1948714410
-CapsuleCollider:
+--- !u!64 &1948714410
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948714406}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1948714411
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13887,7 +14019,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27150
+  m_Name: pb_Mesh17362
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14058,7 +14190,6 @@ GameObject:
   - component: {fileID: 2095628244}
   - component: {fileID: 2095628243}
   - component: {fileID: 2095628242}
-  - component: {fileID: 2095628247}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -14359,22 +14490,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!208 &2095628247
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2095628241}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 5, y: 1, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 5, y: 1, z: -0.5}
-  m_TimeToStationary: 0.5
 --- !u!1 &2104241377
 GameObject:
   m_ObjectHideFlags: 0
@@ -14386,10 +14501,10 @@ GameObject:
   - component: {fileID: 2104241384}
   - component: {fileID: 2104241383}
   - component: {fileID: 2104241382}
-  - component: {fileID: 2104241381}
   - component: {fileID: 2104241380}
   - component: {fileID: 2104241379}
   - component: {fileID: 2104241378}
+  - component: {fileID: 2104241381}
   m_Layer: 0
   m_Name: Cylinder (39)
   m_TagString: Enemy
@@ -14405,7 +14520,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104241377}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -14454,20 +14569,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &2104241381
-CapsuleCollider:
+--- !u!64 &2104241381
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104241377}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2104241382
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14542,10 +14657,10 @@ GameObject:
   - component: {fileID: 2106771504}
   - component: {fileID: 2106771503}
   - component: {fileID: 2106771502}
-  - component: {fileID: 2106771501}
   - component: {fileID: 2106771500}
   - component: {fileID: 2106771499}
   - component: {fileID: 2106771498}
+  - component: {fileID: 2106771501}
   m_Layer: 0
   m_Name: Cylinder (20)
   m_TagString: Enemy
@@ -14561,7 +14676,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106771497}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -14610,20 +14725,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &2106771501
-CapsuleCollider:
+--- !u!64 &2106771501
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106771497}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2106771502
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14698,10 +14813,10 @@ GameObject:
   - component: {fileID: 2137817103}
   - component: {fileID: 2137817102}
   - component: {fileID: 2137817101}
-  - component: {fileID: 2137817100}
   - component: {fileID: 2137817099}
   - component: {fileID: 2137817098}
   - component: {fileID: 2137817097}
+  - component: {fileID: 2137817100}
   m_Layer: 0
   m_Name: Cylinder (24)
   m_TagString: Enemy
@@ -14717,7 +14832,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137817096}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -14766,20 +14881,20 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &2137817100
-CapsuleCollider:
+--- !u!64 &2137817100
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137817096}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2137817101
 MeshRenderer:
   m_ObjectHideFlags: 0

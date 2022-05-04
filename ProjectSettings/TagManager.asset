@@ -8,6 +8,8 @@ TagManager:
   - Ammo Type
   - Goal
   - Enemy
+  - Aim
+  - Sway
   layers:
   - Default
   - TransparentFX
