@@ -150,6 +150,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Boolean_3b22d1f105e84255b63b789966c146eb: 1
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
