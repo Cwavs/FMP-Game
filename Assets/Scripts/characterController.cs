@@ -11,6 +11,8 @@ public class characterController : MonoBehaviour
     private GameObject Aim;
     private float x;
     private float y;
+    public Material heatVisMterialVis;
+    public Material heatVisMterialInvis;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,9 @@ public class characterController : MonoBehaviour
         Sway = GameObject.Find("Sway");
         Aim = GameObject.Find("Aim");
         Aim.SetActive(false);
+
+        heatVisMterialInvis = Resources.Load<Material>("Materials/Heat Vision Invis");
+        heatVisMterialVis = Resources.Load<Material>("Materials/Heat Vision Vis");
     }
 
     private void Update()
@@ -28,6 +33,11 @@ public class characterController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.R))
         {
             ammController.reload();
+        }
+
+        if(Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            GameObject.FindGameObjectsWithTag("Enemy");
         }
 
         if (Input.GetMouseButtonDown(0) && ammController.ammoCheck())
@@ -83,6 +93,16 @@ public class characterController : MonoBehaviour
             y = aimPOV.m_VerticalAxis.Value;
             swayPOV.m_HorizontalAxis.Value = x;
             swayPOV.m_VerticalAxis.Value = y;
+        }
+        if(Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            heatVisMterialInvis.SetFloat("Boolean_4838d837782b40e4b8a46df9670667b7", 1.0f);
+            heatVisMterialVis.SetFloat("Boolean_4838d837782b40e4b8a46df9670667b7", 1.0f);
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            heatVisMterialInvis.SetFloat("Boolean_4838d837782b40e4b8a46df9670667b7", 0.0f);
+            heatVisMterialVis.SetFloat("Boolean_4838d837782b40e4b8a46df9670667b7", 0.0f);
         }
     }
 }
