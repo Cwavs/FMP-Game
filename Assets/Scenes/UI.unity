@@ -4096,8 +4096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammController: {fileID: 770415107}
-  heatVisMterialVis: {fileID: 0}
-  heatVisMterialInvis: {fileID: 0}
+  holdBreathLength: 60
 --- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0

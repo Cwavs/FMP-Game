@@ -11,12 +11,20 @@ public class characterController : MonoBehaviour
     private GameObject Aim;
     private float x;
     private float y;
-    public Material heatVisMterialVis;
-    public Material heatVisMterialInvis;
+    private Material heatVisMterialVis;
+    private Material heatVisMterialInvis;
+    private float holdBreath;
+    private bool holdingBreath;
+    private bool oldHoldingBreath;
+
+    public float holdBreathLength;
 
     // Start is called before the first frame update
     void Start()
     {
+        holdBreath = holdBreathLength;
+        holdingBreath = true;
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         cam = GetComponent<Camera>();
@@ -30,6 +38,8 @@ public class characterController : MonoBehaviour
 
     private void Update()
     {
+        holdBreath = Mathf.Clamp(holdBreath, 0, holdBreathLength);
+
         if(Input.GetKeyDown(KeyCode.R))
         {
             ammController.reload();
@@ -74,35 +84,71 @@ public class characterController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
-            Sway.SetActive(false);
-            Aim.SetActive(true);
-            CinemachinePOV swayPOV = Sway.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachinePOV>();
-            CinemachinePOV aimPOV = Aim.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachinePOV>();
-            x = swayPOV.m_HorizontalAxis.Value;
-            y = swayPOV.m_VerticalAxis.Value;
-            aimPOV.m_HorizontalAxis.Value = x;
-            aimPOV.m_VerticalAxis.Value = y;
+            holdingBreath = true;
         }
         else if(Input.GetKeyUp(KeyCode.LeftShift))
         {
-            Sway.SetActive(true);
-            Aim.SetActive(false);
-            CinemachinePOV swayPOV = Sway.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachinePOV>();
-            CinemachinePOV aimPOV = Aim.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachinePOV>();
-            x = aimPOV.m_HorizontalAxis.Value;
-            y = aimPOV.m_VerticalAxis.Value;
-            swayPOV.m_HorizontalAxis.Value = x;
-            swayPOV.m_VerticalAxis.Value = y;
+            holdingBreath = false;
+        }
+
+        print(holdingBreath);
+
+        if(holdBreath <= 0)
+        {
+            holdingBreath = false;
+        }
+
+        if (holdingBreath != oldHoldingBreath)
+        {
+            if (holdingBreath)
+            {
+                Sway.SetActive(false);
+                Aim.SetActive(true);
+                CinemachinePOV swayPOV = Sway.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachinePOV>();
+                CinemachinePOV aimPOV = Aim.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachinePOV>();
+                x = swayPOV.m_HorizontalAxis.Value;
+                y = swayPOV.m_VerticalAxis.Value;
+                aimPOV.m_HorizontalAxis.Value = x;
+                aimPOV.m_VerticalAxis.Value = y;
+            }
+            else
+            {
+                Sway.SetActive(true);
+                Aim.SetActive(false);
+                CinemachinePOV swayPOV = Sway.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachinePOV>();
+                CinemachinePOV aimPOV = Aim.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachinePOV>();
+                x = aimPOV.m_HorizontalAxis.Value;
+                y = aimPOV.m_VerticalAxis.Value;
+                swayPOV.m_HorizontalAxis.Value = x;
+                swayPOV.m_VerticalAxis.Value = y;
+            }
         }
         if(Input.GetKeyDown(KeyCode.LeftControl))
         {
             heatVisMterialInvis.SetFloat("Boolean_4838d837782b40e4b8a46df9670667b7", 1.0f);
             heatVisMterialVis.SetFloat("Boolean_4838d837782b40e4b8a46df9670667b7", 1.0f);
+            
         }
         else if (Input.GetKeyUp(KeyCode.LeftControl))
         {
             heatVisMterialInvis.SetFloat("Boolean_4838d837782b40e4b8a46df9670667b7", 0.0f);
             heatVisMterialVis.SetFloat("Boolean_4838d837782b40e4b8a46df9670667b7", 0.0f);
+        }
+
+        oldHoldingBreath = holdingBreath;
+
+        print(holdBreath);
+    }
+
+    void FixedUpdate()
+    {
+        if (holdingBreath)
+        {
+            holdBreath--;
+        }
+        else
+        {
+            holdBreath++;
         }
     }
 }
