@@ -15,6 +15,10 @@ public class characterController : MonoBehaviour
     private Material heatVisMterialInvis;
     private float holdBreath;
     private bool holdingBreath;
+    private bool noShoot;
+
+    private float scroll;
+
     private bool oldHoldingBreath;
 
     public float holdBreathLength;
@@ -24,6 +28,8 @@ public class characterController : MonoBehaviour
     {
         holdBreath = holdBreathLength;
         holdingBreath = true;
+
+        scroll = 40;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -38,6 +44,10 @@ public class characterController : MonoBehaviour
 
     private void Update()
     {
+        scroll = (Input.mouseScrollDelta.y * -1) + scroll;
+
+        cam.GetComponent<CinemachineBrain>().ActiveVirtualCamera.VirtualCameraGameObject.GetComponent<CinemachineVirtualCamera>().m_Lens.FieldOfView = Mathf.Clamp(scroll, 20, 90);
+
         holdBreath = Mathf.Clamp(holdBreath, 0, holdBreathLength);
 
         if(Input.GetKeyDown(KeyCode.R))
@@ -50,7 +60,7 @@ public class characterController : MonoBehaviour
             GameObject.FindGameObjectsWithTag("Enemy");
         }
 
-        if (Input.GetMouseButtonDown(0) && ammController.ammoCheck())
+        if (Input.GetMouseButtonDown(0) && ammController.ammoCheck() && !noShoot)
         {
             print("Shoot");
             ammController.decreaseAmmo();
@@ -127,17 +137,20 @@ public class characterController : MonoBehaviour
         {
             heatVisMterialInvis.SetFloat("Boolean_4838d837782b40e4b8a46df9670667b7", 1.0f);
             heatVisMterialVis.SetFloat("Boolean_4838d837782b40e4b8a46df9670667b7", 1.0f);
-            
+            noShoot = true;
         }
         else if (Input.GetKeyUp(KeyCode.LeftControl))
         {
             heatVisMterialInvis.SetFloat("Boolean_4838d837782b40e4b8a46df9670667b7", 0.0f);
             heatVisMterialVis.SetFloat("Boolean_4838d837782b40e4b8a46df9670667b7", 0.0f);
+            noShoot = false;
         }
 
         oldHoldingBreath = holdingBreath;
 
         print(holdBreath);
+
+        
     }
 
     void FixedUpdate()
@@ -151,4 +164,14 @@ public class characterController : MonoBehaviour
             holdBreath++;
         }
     }
+}
+
+public static class ExtensionMethods
+{
+
+    public static float Remap(this float value, float from1, float to1, float from2, float to2)
+    {
+        return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
+    }
+
 }
