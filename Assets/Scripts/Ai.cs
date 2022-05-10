@@ -9,6 +9,10 @@ public class Ai : MonoBehaviour
 	public Transform[] goals;
     private int oldGoal;
     private int rand;
+
+    public bool target;
+
+    private gameController controller;
 	
     // Start is called before the first frame update
     void Start()
@@ -17,6 +21,8 @@ public class Ai : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.SetDestination(goals[rand].position);
         oldGoal = rand;
+
+        controller = GameObject.FindGameObjectWithTag("Game Controller").GetComponent<gameController>();
     }
 
     // Update is called once per frame
@@ -41,7 +47,15 @@ public class Ai : MonoBehaviour
 
     public void OnHit()
     {
-        Destroy(gameObject);
+        if(target)
+        {
+            Destroy(gameObject);
+            controller.increaseScore(10);
+        }
+        else
+        {
+            controller.decreaseScore(10);
+        }
     }
 
     public int randomGoal()

@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIController : MonoBehaviour
 {
 
-    public Text ammoTxt;
-    public Image ammoType;
+    private TMP_Text scoreText;
+    private Text ammoTxt;
+    private Image ammoType;
 
     // Start is called before the first frame update
     void Start()
     {
         ammoTxt = GameObject.FindGameObjectWithTag("Ammo Count").GetComponent<Text>();
         ammoType = GameObject.FindGameObjectWithTag("Ammo Type").GetComponent<Image>();
+        scoreText = GameObject.FindGameObjectWithTag("Score Text").GetComponent<TMP_Text>();
         ammoType.sprite = Resources.Load<Sprite>("Bullet Types/Bullet");
     }
 
@@ -24,7 +27,7 @@ public class UIController : MonoBehaviour
         
     }
 
-    public void updateAmmoType(ammoController.BulletType currentAmmoType)
+    public void updateAmmoType(gameController.BulletType currentAmmoType)
     {
         switch (currentAmmoType)
         {
@@ -33,17 +36,17 @@ public class UIController : MonoBehaviour
                     ammoType.sprite = Resources.Load<Sprite>("Bullet Types/Bullet");
                     break;
                 }
-            case ammoController.BulletType.Normal:
+            case gameController.BulletType.Normal:
                 {
                     ammoType.sprite = Resources.Load<Sprite>("Bullet Types/Bullet");
                     break;
                 }
-            case ammoController.BulletType.Shock:
+            case gameController.BulletType.Shock:
                 {
                     ammoType.sprite = Resources.Load<Sprite>("Bullet Types/Bullet Shock");
                     break;
                 }
-            case ammoController.BulletType.Wall:
+            case gameController.BulletType.Wall:
                 {
                     ammoType.sprite = Resources.Load<Sprite>("Bullet Types/Bullet Wall");
                     break;
@@ -54,5 +57,10 @@ public class UIController : MonoBehaviour
     public void updateAmmoCount(int newAmmoCount)
     {
         ammoTxt.text = "Ammo: " + newAmmoCount;
+    }
+
+    public void updateScoreText(int newScore)
+    {
+        scoreText.text = "Score: " + newScore;
     }
 }

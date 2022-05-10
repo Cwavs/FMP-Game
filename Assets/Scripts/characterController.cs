@@ -5,7 +5,7 @@ using Cinemachine;
 
 public class characterController : MonoBehaviour
 {
-    public ammoController ammController;
+    public gameController ammController;
     private Camera cam;
     private GameObject Sway;
     private GameObject Aim;
