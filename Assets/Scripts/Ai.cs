@@ -23,6 +23,11 @@ public class Ai : MonoBehaviour
         oldGoal = rand;
 
         controller = GameObject.FindGameObjectWithTag("Game Controller").GetComponent<gameController>();
+		
+		if(target)
+		{
+			controller.registerTarget(this);
+		}
     }
 
     // Update is called once per frame
@@ -51,6 +56,7 @@ public class Ai : MonoBehaviour
         {
             Destroy(gameObject);
             controller.increaseScore(10);
+			controller.deregisterTarget(this);
         }
         else
         {
