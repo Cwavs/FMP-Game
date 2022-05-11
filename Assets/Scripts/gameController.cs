@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class gameController : MonoBehaviour
 {
@@ -14,10 +13,6 @@ public class gameController : MonoBehaviour
     private int currentScore;
 
     public UIController interfaceController;
-
-
-	private List<Ai> targets;
-
 
     public enum BulletType
     {
@@ -34,15 +29,14 @@ public class gameController : MonoBehaviour
         wallAmmoCount = 10;
         normalAmmoCount = 10;
         currentAmmoType = gameController.BulletType.Normal;
+
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
-		if(targets.Count == 0)
-		{
-			SceneManager.LoadScene(0);
-		}
+
     }
     
     public void decreaseAmmo()
@@ -184,21 +178,4 @@ public class gameController : MonoBehaviour
     {
         interfaceController.updateScoreText(currentScore);
     }
-	
-	public void registerTarget(Ai ai)
-	{
-		if(targets != null)
-		{
-			targets.Add(ai);
-		}else
-		{
-			targets = new List<Ai>();
-			targets.Add(ai);
-		}
-	}
-	
-	public void deregisterTarget(Ai ai)
-	{
-		targets.Remove(ai);
-	}
 }
