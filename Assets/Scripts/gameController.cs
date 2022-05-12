@@ -55,7 +55,7 @@ public class gameController : MonoBehaviour
     {
         BulletType newAmmoType = currentAmmoType;
         newAmmoType--;
-        newAmmoType = clampBullet(newAmmoType, 0, 2);
+        newAmmoType.Clamp(0, 2);
         switchAmmoCount(newAmmoType);
         currentAmmoType = newAmmoType;
         //print(newAmmoType);
@@ -67,7 +67,7 @@ public class gameController : MonoBehaviour
     {
         BulletType newAmmoType = currentAmmoType;
         newAmmoType++;
-        newAmmoType = clampBullet(newAmmoType, 0, 2);
+        newAmmoType.Clamp(0, 2);
         switchAmmoCount(newAmmoType);
         currentAmmoType = newAmmoType;
         //print(newAmmoType);
@@ -149,13 +149,6 @@ public class gameController : MonoBehaviour
         interfaceController.updateAmmoType(currentAmmoType);
     }
 
-    public static BulletType clampBullet(BulletType clamp, int minValue, int maxValue)
-    {
-        BulletType clamped = (BulletType)Mathf.Clamp((int)clamp, minValue, maxValue);
-
-        return clamped;
-    }
-
     public bool ammoCheck()
     {
         if(ammoCount < 1)
@@ -201,4 +194,12 @@ public class gameController : MonoBehaviour
 	{
 		targets.Remove(ai);
 	}
+}
+
+public static class BulletTypeExtenions
+{
+    public static gameController.BulletType Clamp(this gameController.BulletType value, int minValue, int maxValue)
+    {
+        return (gameController.BulletType)Mathf.Clamp((int)value, minValue, maxValue);
+    }
 }
