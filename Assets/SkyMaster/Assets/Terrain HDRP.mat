@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 2
+  version: 11
 --- !u!21 &2100000
 Material:
   serializedVersion: 6
@@ -26,7 +26,7 @@ Material:
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2225
   stringTagMap: {}
   disabledShaderPasses:
   - DistortionVectors
@@ -124,6 +124,7 @@ Material:
     - _EmissiveColorLDR: {r: 0.01886791, g: 0.01886791, b: 0.01886791, a: 1}
     - _TintColor: {r: 0.6691177, g: 0.33455884, b: 0.33455884, a: 0.30980393}
     - _UnlitColor: {r: 0, g: 0.96311355, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
