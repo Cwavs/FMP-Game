@@ -31,15 +31,11 @@ public class Ai : MonoBehaviour
     {
         int rand = Random.Range(0, goals.Length - 1);
         Vector3 goal = goals[rand].position;
-        if(goal != oldgoal)
+        if(goal == oldgoal)
         {
-            oldgoal = goal;
-            return goal;
-        }
-        else
-        {
-            return pickRandomGoal();
-        }
-        
+            goal = pickRandomGoal();
+        } 
+        oldgoal = goal;
+        return goal;
     }
 }
