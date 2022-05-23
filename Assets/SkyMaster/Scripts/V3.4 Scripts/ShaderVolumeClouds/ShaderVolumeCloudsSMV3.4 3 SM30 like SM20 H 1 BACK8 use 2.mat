@@ -47,7 +47,7 @@ Material:
     - _HorizonFactor: 0.081
     - _TranspOffset: -0.01
     - _Transparency: 0.51
-    - pointLightPower: 0.32811219
+    - pointLightPower: 2
     m_Colors:
     - _Color: {r: 0.043137256, g: 0.043137256, b: 0.043137256, a: 1}
     - _Control: {r: 1, g: 1, b: 1, a: 1}
@@ -56,8 +56,8 @@ Material:
     - _LightingControl: {r: 1, g: 1, b: -1, a: 0}
     - _ShadowColor: {r: 0.23921569, g: 0.23921569, b: 0.31764707, a: 0.27450982}
     - _SunColor: {r: 0.46226418, g: 0.4251958, b: 0.4251958, a: 0.15333334}
-    - _Velocity1: {r: 9.874909, g: 0.0000011771808, b: 0, a: 0.06913158}
-    - _Velocity2: {r: 14.550743, g: 0.0000017345835, b: 0, a: 2}
+    - _Velocity1: {r: 9.893913, g: 0.0000011794463, b: 0, a: 0.069267005}
+    - _Velocity2: {r: 14.606102, g: 0.0000017411828, b: 0, a: 2}
     - pointLightColor: {r: 1, g: 1, b: 1, a: 1}
-    - pointLightPos: {r: -643.2979, g: 622.4206, b: -2022.3066, a: 0}
+    - pointLightPos: {r: -811.23413, g: 749.5627, b: -808.21375, a: 0}
   m_BuildTextureStacks: []

@@ -100,7 +100,7 @@ Material:
     - _ditherTiling: 1
     - _shadowAlpha: 0.75
     - _shadowSharpness: 1
-    - pointLightPower: 0.32811219
+    - pointLightPower: 2
     m_Colors:
     - _Ambient: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 0.11784035, g: 0.11784035, b: 0.11784035, a: 0.8585514}
@@ -116,9 +116,9 @@ Material:
     - _ShadowColor: {r: 0.23921569, g: 0.23921569, b: 0.31764707, a: 0.27450982}
     - _SunColor: {r: 0.46226418, g: 0.4251958, b: 0.4251958, a: 0.15333334}
     - _SunDir: {r: 0, g: 1, b: 0, a: 0}
-    - _Velocity1: {r: 10.046242, g: 0.0000011976052, b: 0, a: 0.07029359}
-    - _Velocity2: {r: 16.829775, g: 0.0000020062653, b: 0, a: 2}
+    - _Velocity1: {r: 10.039019, g: 0.0000011967442, b: 0, a: 0.07024313}
+    - _Velocity2: {r: 16.604475, g: 0.0000019794074, b: 0, a: 2}
     - _WindDirection: {r: 1, g: 0, b: 0, a: 0}
     - pointLightColor: {r: 1, g: 1, b: 1, a: 1}
-    - pointLightPos: {r: -643.2979, g: 622.4206, b: -2022.3066, a: 0}
+    - pointLightPos: {r: -811.23413, g: 749.5627, b: -808.21375, a: 0}
   m_BuildTextureStacks: []

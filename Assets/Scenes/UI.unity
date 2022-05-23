@@ -10309,6 +10309,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8875873777681713923, guid: 36e054e33b116c24bb7e07f7299b71c0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8875873777763954883, guid: 36e054e33b116c24bb7e07f7299b71c0, type: 3}
       propertyPath: m_Name
       value: DUSK TIME CLOUDS
@@ -10366,7 +10370,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 444019151}
     - target: {fileID: 8875873777820903227, guid: 36e054e33b116c24bb7e07f7299b71c0, type: 3}
+      propertyPath: DomeClouds
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875873777820903227, guid: 36e054e33b116c24bb7e07f7299b71c0, type: 3}
+      propertyPath: WeatherDensity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875873777820903227, guid: 36e054e33b116c24bb7e07f7299b71c0, type: 3}
       propertyPath: EnableLightning
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875873777820903227, guid: 36e054e33b116c24bb7e07f7299b71c0, type: 3}
+      propertyPath: MultiQuadClouds
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8875873778333261513, guid: 36e054e33b116c24bb7e07f7299b71c0, type: 3}
